@@ -1,0 +1,49 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "pha0",
+  "password": "pha0"
+}
+
+###
+
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "pha",
+  "password": "pha"
+}
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI5MjY0Njk2ZDM2MWQ2MDE3ZDJhNzciLCJpYXQiOjE2NTgzMDUwMTJ9.3Kbl7f1VWfOhgbPCPduCMxI-MP4tVS999ESzhdBotW4
+
+{
+  "title":"bai học da hoc",
+  "description": "abc",
+  "url": "google.com",
+  "status": ""
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI4NTg3OTg5M2ZhNTA0YWM4NWRlODgiLCJpYXQiOjE2NTYzMTExMTZ9.t_cT1EDlvMG9ifDHFRrPSQNFWxuE80Au7x11iSRZp4U
+
+###
+PUT http://localhost:5000/api/posts/62b9509b2d46c38024f3ab47
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI4NTg3OTg5M2ZhNTA0YWM4NWRlODgiLCJpYXQiOjE2NTYzMTExMTZ9.t_cT1EDlvMG9ifDHFRrPSQNFWxuE80Au7x11iSRZp4U
+
+{
+ "title":"new course",
+  "description":" mo ta moi",
+  "url":"vue.org",
+  "status":"To Learn"
+}
+
+###
+DELETE http://localhost:5000/api/posts/62b9509b2d46c38024f3ab47
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI4NTg3OTg5M2ZhNTA0YWM4NWRlODgiLCJpYXQiOjE2NTYzMTExMTZ9.t_cT1EDlvMG9ifDHFRrPSQNFWxuE80Au7x11iSRZp4U
